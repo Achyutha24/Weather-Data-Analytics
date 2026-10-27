@@ -1,0 +1,352 @@
+[000] (style=Heading 1, align=None): VISVESVARAYA TECHNOLOGICAL UNIVERSITY
+[001] (style=Normal, align=CENTER (1)): “Jnana Sangama”, Belagavi-590018
+[002] (style=Body Text, align=None): 
+[003] (style=Heading 2, align=CENTER (1)): Project report
+[004] (style=Normal, align=CENTER (1)): on
+[005] (style=Normal, align=CENTER (1)): VIRTUAL MACHINE
+[006] (style=Normal, align=CENTER (1)): INSTALLATION 
+[007] (style=Normal, align=CENTER (1)): Submitted in partial fulfillment for the award of Bachelor of Engineering
+[008] (style=Normal, align=CENTER (1)): In
+[009] (style=Normal, align=CENTER (1)): CSE-ARTIFICIAL INTELLIGENCE 
+[010] (style=Normal, align=CENTER (1)): Submitted by
+[011] (style=Heading 2, align=None):                                              DHANUSH JADAV        
+                                                   (1VE23CA014) 
+[012] (style=Normal, align=CENTER (1)): Under the guidance of
+[013] (style=Heading 3, align=CENTER (1)): Mrs. Vimala Devi R 
+[014] (style=Body Text, align=None): Assistant Professor Dept. of CSE (AI), SVCE
+[015] (style=Normal, align=CENTER (1)):             Department Of Computer Science Engineering (Artificial Intelligence)
+            Sri Venkateshwara College of Engineering, Bengaluru – 562157
+[016] (style=Normal, align=None): 2025 - 2026
+[017] (style=Normal, align=JUSTIFY (3)): 
+[018] (style=Normal, align=None): 
+[019] (style=Heading 1, align=LEFT (0)):                                         ABSTRACT
+[020] (style=Heading 1, align=LEFT (0)): 
+[021] (style=Normal (Web), align=JUSTIFY (3)): This project focuses on the installation and setup of the Ubuntu operating system using Oracle VM VirtualBox virtualization software. The main objective of this work is to understand the process of creating a virtual machine, configuring system resources, and installing a Linux-based operating system in a virtualized environment without affecting the host operating system. Virtualization technology allows multiple operating systems to run on a single physical computer, making it useful for learning, testing, development, and research purposes.
+[022] (style=Normal (Web), align=JUSTIFY (3)): In this project, a virtual machine was created in VirtualBox by allocating memory, storage space, and processor resources. The Ubuntu ISO image was used to boot and install the operating system inside the virtual environment. After successful installation, basic system configurations such as user account creation, software updates, and desktop environment setup were performed.
+[023] (style=Normal (Web), align=JUSTIFY (3)): The project helps in understanding important concepts such as virtualization, operating system installation, disk partitioning, and system configuration. It also provides practical exposure to Linux commands and the Ubuntu environment. The implementation demonstrates that VirtualBox offers a safe, flexible, and cost-effective platform for experimenting with different operating systems without modifying the main computer system.
+[024] (style=Normal (Web), align=JUSTIFY (3)): Overall, this project successfully achieved the installation and execution of Ubuntu 26.04 on VirtualBox and provided hands-on experience in virtualization and Linux system management.
+[025] (style=Heading 1, align=LEFT (0)): 
+[026] (style=Normal, align=None): 	
+[027] (style=Normal, align=None): 
+[028] (style=Normal, align=CENTER (1)): TABLE OF CONTENTS
+[029] (style=toc 2, align=None): INTRODUCTION………………………………………………………………………1
+[030] (style=toc 2, align=None):  SYSTEM REQUIREMENTS AND SPECIFICATION……………………………....4
+[031] (style=toc 2, align=None):  SYSTEM DESIGN……………………………………………………………………..6
+[032] (style=toc 2, align=None):  IMPLEMENTATION…………………………………………………………………...8
+[033] (style=toc 2, align=None):  RESULT…………………………………………………………………………………..11
+[034] (style=toc 2, align=None):  CONCLUSION…………………………………………………………………………....15
+[035] (style=toc 2, align=None): 
+[036] (style=Normal, align=None): 
+[037] (style=Body Text, align=None): 
+[038] (style=Body Text, align=None): 
+[039] (style=Heading 1, align=None): INTRODUCTION
+[040] (style=Body Text, align=None): 
+[041] (style=Normal, align=JUSTIFY (3)): The rapid growth of computer technology has increased the need for efficient and flexible methods of using multiple operating systems on a single computer system. One of the most widely used technologies for this purpose is virtualization. Virtualization allows users to create and run virtual machines that behave like independent computers within a physical computer. This technology helps users test software, learn operating systems, perform development tasks, and carry out experiments without affecting the main operating system installed on the computer.
+[042] (style=Normal, align=JUSTIFY (3)): Oracle VM VirtualBox is one of the most popular open-source virtualization platforms used for creating and managing virtual machines. It provides a simple and user-friendly environment where different operating systems can be installed and executed virtually. VirtualBox supports many operating systems such as Windows, Linux, macOS, and Solaris. It is widely used by students, developers, researchers, and IT professionals because it is free, lightweight, and easy to configure.
+[043] (style=Normal, align=JUSTIFY (3)): Ubuntu is a Linux-based open-source operating system developed by Canonical Ltd. Ubuntu is known for its stability, security, and user-friendly graphical interface. It is widely used for programming, server management, cloud computing, networking, cybersecurity, and educational purposes. Ubuntu also provides regular updates, strong community support, and access to thousands of free software packages. Because of its simplicity and reliability, Ubuntu has become one of the most commonly used Linux distributions around the world.
+[044] (style=Normal, align=JUSTIFY (3)): The purpose of this project is to install Ubuntu 26.04 on VirtualBox and study the working of virtualization technology. Instead of installing Ubuntu directly on the computer hardware, the operating system is installed inside a virtual machine. This approach allows the user to run Ubuntu safely without making permanent changes to the host operating system. The project demonstrates how a virtual environment can be created by allocating system resources such as RAM,  processor cores, and storage space to the virtual machine.
+[045] (style=Normal, align=JUSTIFY (3)): 
+[046] (style=Body Text, align=None): 
+[047] (style=Body Text, align=None): 
+[048] (style=Normal, align=JUSTIFY (3)): The installation process begins with downloading the Ubuntu ISO image file and installing VirtualBox software on the host system. A new virtual machine is then created in VirtualBox by selecting the operating system type, assigning memory size, creating a virtual hard disk, and configuring system settings. After the virtual machine setup is completed, the Ubuntu operating system is installed using the ISO image file as the bootable media. Once the installation is successful, additional configurations such as Guest Additions installation, software updates, and basic Linux commands can be performed.
+[049] (style=Normal, align=JUSTIFY (3)): This project is important because virtualization has become a key technology in modern computing environments. Many organizations use virtualization for server management, cloud computing, software testing, and cybersecurity research. By learning how to install and use Ubuntu in VirtualBox, users gain practical knowledge of virtual machines and Linux operating systems. It also provides a safe environment for experimentation and learning without the risk of damaging the host computer system.
+[050] (style=Normal, align=JUSTIFY (3)): Another advantage of virtualization is resource optimization. Multiple virtual machines can run simultaneously on a single physical machine, reducing hardware costs and improving system efficiency. VirtualBox also provides features such as snapshots, shared folders, clipboard sharing, and network configuration, making it easier to manage virtual systems. Ubuntu, when combined with VirtualBox, creates an effective platform for learning Linux commands, software development, networking, and system administration.
+[051] (style=Normal, align=JUSTIFY (3)): The main objectives of this project are to understand virtualization technology, create and configure a virtual machine, install Ubuntu 26.04 successfully, and study the features and functionality of the Ubuntu operating system. Through this project, users can develop practical skills related to operating systems, virtualization software, and Linux environments.
+[052] (style=Normal, align=JUSTIFY (3)): Overall, the installation of Ubuntu 26.04 on VirtualBox provides a cost-effective, flexible, and secure method for learning and experimenting with Linux systems. This project helps users understand the practical implementation of virtualization and demonstrates how modern computing systems can efficiently support multiple operating systems on a single hardware platform.
+[053] (style=Heading 3, align=None): 
+[054] (style=Body Text, align=JUSTIFY (3)): 
+[055] (style=Body Text, align=JUSTIFY (3)): 
+[056] (style=Body Text, align=JUSTIFY (3)): 
+[057] (style=Normal, align=None): 
+[058] (style=Normal, align=None): 
+[059] (style=Normal, align=None): 
+[060] (style=Normal, align=None): 
+[061] (style=Normal, align=None): 
+[062] (style=Normal, align=None): 
+[063] (style=Normal, align=None): 
+[064] (style=Normal, align=None): 
+[065] (style=Normal, align=None): 
+[066] (style=Normal, align=None): 
+[067] (style=Normal, align=None): 
+[068] (style=Normal, align=None): 
+[069] (style=Normal, align=None): 
+[070] (style=Normal, align=None): 
+[071] (style=Normal, align=None): 
+[072] (style=Normal, align=None): 
+[073] (style=Normal, align=None): 
+[074] (style=Normal, align=None): 
+[075] (style=Normal, align=None): 
+[076] (style=Normal, align=None): 
+[077] (style=Normal, align=None): 
+[078] (style=Normal, align=None): 
+[079] (style=Normal, align=None): 
+[080] (style=Normal, align=None): 
+[081] (style=Normal, align=None): 	
+[082] (style=Normal, align=None): 	
+[083] (style=Body Text, align=None): 
+[084] (style=Body Text, align=None): 
+[085] (style=Heading 1, align=None): SYSTEM REQUIREMENTS AND SPECFIFICATIONS
+[086] (style=Body Text, align=None): 
+[087] (style=Heading 3, align=JUSTIFY (3)):          The successful installation and execution of Ubuntu on Oracle VM VirtualBox requires both hardware and software resources. The host computer should have sufficient processing power, memory, and storage capacity to support virtualization efficiently. Proper system specifications ensure smooth installation, stable performance, and better user experience while running the virtual machine.
+[088] (style=Heading 3, align=JUSTIFY (3)):          The following section describes the minimum and recommended system requirements used for installing Ubuntu 26.04 on VirtualBox.
+[089] (style=Heading 3, align=JUSTIFY (3)): 
+[090] (style=Heading 3, align=None): 
+[091] (style=Heading 3, align=None): 
+[092] (style=Heading 3, align=None): 
+[093] (style=Heading 3, align=None): 
+[094] (style=Heading 3, align=None): 
+[095] (style=Heading 3, align=None): 
+[096] (style=Heading 3, align=None): 
+[097] (style=Heading 3, align=None): 
+[098] (style=Heading 3, align=None): 
+[099] (style=Heading 3, align=None): 
+[100] (style=Heading 3, align=None): 
+[101] (style=Heading 3, align=None): 
+[102] (style=Heading 3, align=None): 
+[103] (style=Heading 3, align=None): 
+[104] (style=Heading 3, align=None): 
+[105] (style=Heading 3, align=None): 
+[106] (style=Heading 3, align=None): 
+[107] (style=Heading 3, align=None): 
+[108] (style=Heading 3, align=None): 
+[109] (style=Heading 3, align=None): 
+[110] (style=Heading 3, align=None): 
+[111] (style=Heading 3, align=None): 
+[112] (style=Heading 3, align=None): 
+[113] (style=Heading 3, align=None): 
+[114] (style=Heading 3, align=None): 
+[115] (style=Heading 3, align=None): 
+[116] (style=Heading 3, align=None): 
+[117] (style=Heading 3, align=None): 
+[118] (style=Heading 3, align=None): 
+[119] (style=Body Text, align=None): 
+[120] (style=Normal, align=None): 
+[121] (style=Body Text, align=JUSTIFY (3)): The above system requirements and specifications ensure proper functioning of Ubuntu inside the VirtualBox environment. Adequate RAM allocation and processor support improve system performance, while virtualization support in BIOS/UEFI enables efficient execution of virtual machines. The use of SSD storage further enhances boot speed and application performance within the Ubuntu virtual environment.
+[122] (style=Body Text, align=JUSTIFY (3)): 
+[123] (style=Body Text, align=None): 
+[124] (style=Heading 1, align=None): SYSTEM DESIGN
+[125] (style=Normal, align=JUSTIFY (3)): System design is an important phase in the development and implementation of any computer-based project. It defines the structure, components, workflow, and overall architecture of the system. In this project, the system design focuses on the installation and execution of Ubuntu on a virtual environment using Oracle VM VirtualBox. The design explains how the host operating system, virtualization software, and guest operating system interact with each other to create a fully functional virtual machine.
+[126] (style=Normal, align=JUSTIFY (3)): The system is designed in such a way that the host computer acts as the main physical machine, while VirtualBox functions as the virtualization platform responsible for creating and managing virtual machines. Inside the virtual machine, Ubuntu 26.04 is installed as the guest operating system. The entire setup allows users to run Ubuntu independently without modifying or affecting the host operating system.
+[127] (style=Normal, align=JUSTIFY (3)): The system design mainly consists of three major components:
+[128] (style=Normal, align=JUSTIFY (3)): Host Operating System 
+[129] (style=Normal, align=JUSTIFY (3)): Virtualization Layer (VirtualBox) 
+[130] (style=Normal, align=JUSTIFY (3)): Guest Operating System (Ubuntu 26.04) 
+[131] (style=Normal, align=JUSTIFY (3)): The host operating system provides the physical hardware resources such as processor, RAM, storage, and network connectivity. VirtualBox uses these resources and allocates them to the virtual machine according to the user configuration. Ubuntu operates inside this virtual machine environment as if it were running on a separate physical computer.
+[132] (style=Normal, align=JUSTIFY (3)): The architecture of the system ensures resource isolation, flexibility, and safe experimentation. The user can allocate specific memory size, storage capacity, processor cores, and display memory to the virtual machine based on system capability. Features such as snapshots, shared folders, clipboard sharing, and network adapters improve usability and communication between the host and guest operating systems.
+[133] (style=Normal, align=JUSTIFY (3)): The installation workflow begins with downloading the Ubuntu ISO image file and installing VirtualBox on the host system. A virtual machine is then created with the required hardware configuration. 
+[134] (style=Normal, align=JUSTIFY (3)): 
+[135] (style=Normal, align=JUSTIFY (3)): The Ubuntu ISO image is attached as a bootable disk, and the installation process is completed inside the virtual machine. After installation, Ubuntu boots independently and provides a Linux desktop environment for users.
+[136] (style=Normal, align=JUSTIFY (3)): The designed system provides several advantages such as:
+[137] (style=Normal, align=JUSTIFY (3)):  Safe testing environment 
+[138] (style=Normal, align=JUSTIFY (3)):  No modification to host operating system 
+[139] (style=Normal, align=JUSTIFY (3)):  Easy backup and recovery using snapshots 
+[140] (style=Normal, align=JUSTIFY (3)):  Efficient resource utilization 
+[141] (style=Normal, align=JUSTIFY (3)):  Support for learning Linux and virtualization 
+[142] (style=Normal, align=JUSTIFY (3)):  Ability to run multiple operating systems simultaneously 
+[143] (style=Normal, align=JUSTIFY (3)): The system design also includes network configuration using NAT Adapter mode, which allows the Ubuntu virtual machine to access the internet through the host system connection. VirtualBox Guest Additions can be installed to improve graphics performance, enable full-screen mode, and support file sharing between systems.
+[144] (style=Normal, align=JUSTIFY (3)): Overall, the system design provides a stable, flexible, and user-friendly virtualization environment for running Ubuntu 26.04 on VirtualBox. The design demonstrates how virtualization technology simplifies operating system installation and management while providing a secure platform for learning, development, and experimentation.
+[145] (style=Body Text, align=JUSTIFY (3)): 
+[146] (style=Body Text, align=None): 
+[147] (style=Body Text, align=None): 
+[148] (style=Heading 1, align=None): IMPLEMENTATION 
+[149] (style=Body Text, align=None): Implementation is the process of converting the system design into a working system. In this project, the implementation phase involves the installation and configuration of Oracle VM VirtualBox and the successful setup of Ubuntu inside a virtual machine environment. This phase includes downloading required software, creating the virtual machine, allocating resources, installing Ubuntu, and configuring the system for proper operation.
+[150] (style=Body Text, align=None): The implementation was carried out on a Windows-based host system using VirtualBox as the virtualization platform. Ubuntu 26.04 was installed as the guest operating system using the bootable ISO image file downloaded from the official Ubuntu website.
+[151] (style=Body Text, align=None): 
+[152] (style=Body Text, align=None): 4.1 Installation of VirtualBox
+[153] (style=Body Text, align=None): The first step in the implementation process was installing VirtualBox on the host operating system. VirtualBox setup file was downloaded and installed by following the standard installation wizard.
+[154] (style=Body Text, align=None): Steps Performed:
+[155] (style=Body Text, align=None): Downloaded VirtualBox installer from the official website. 
+[156] (style=Body Text, align=None): Executed the setup file. 
+[157] (style=Body Text, align=None): Accepted license agreement and selected installation components. 
+[158] (style=Body Text, align=None): Completed the installation process successfully. 
+[159] (style=Body Text, align=None): Launched VirtualBox application. 
+[160] (style=Body Text, align=None): VirtualBox provides the environment required to create and manage virtual machines.
+[161] (style=Body Text, align=None): 
+[162] (style=Body Text, align=None): 4.2 Downloading Ubuntu ISO File
+[163] (style=Body Text, align=None): The Ubuntu 26.04 ISO image file was downloaded from the official Ubuntu website. The ISO file acts as the installation media for the operating system.
+[164] (style=Body Text, align=None): Steps Performed:
+[165] (style=Body Text, align=None): Opened Ubuntu official website. 
+[166] (style=Body Text, align=None): Selected Ubuntu 26.04 LTS version. 
+[167] (style=Body Text, align=None): Downloaded the bootable ISO image file. 
+[168] (style=Body Text, align=None): Saved the ISO file to the local storage. 
+[169] (style=Body Text, align=None): The downloaded ISO file was later attached to the virtual machine for installation.
+[170] (style=Normal, align=JUSTIFY (3)): 
+[171] (style=Body Text, align=JUSTIFY (3)): 
+[172] (style=Body Text, align=JUSTIFY (3)): 4.3 Creation of Virtual Machine
+[173] (style=Body Text, align=JUSTIFY (3)): A new virtual machine was created in VirtualBox to install Ubuntu. During this process, system resources such as memory, storage, and processor cores were allocated.
+[174] (style=Body Text, align=JUSTIFY (3)): Steps Performed:
+[175] (style=Body Text, align=JUSTIFY (3)): Opened VirtualBox and clicked on “New”. 
+[176] (style=Body Text, align=JUSTIFY (3)): Entered virtual machine name as “Ubuntu 26.04”. 
+[177] (style=Body Text, align=JUSTIFY (3)): Selected Linux as type and Ubuntu (64-bit) as version. 
+[178] (style=Body Text, align=JUSTIFY (3)): Allocated 4 GB RAM to the virtual machine. 
+[179] (style=Body Text, align=JUSTIFY (3)): Created a virtual hard disk of 30 GB size. 
+[180] (style=Body Text, align=JUSTIFY (3)): Selected dynamically allocated storage option. 
+[181] (style=Body Text, align=JUSTIFY (3)): Finished virtual machine creation. 
+[182] (style=Body Text, align=JUSTIFY (3)): The virtual machine was now ready for Ubuntu installation.
+[183] (style=Body Text, align=JUSTIFY (3)): 
+[184] (style=Body Text, align=JUSTIFY (3)): 4.4 Configuration of Virtual Machine
+[185] (style=Body Text, align=JUSTIFY (3)): Additional settings were configured before starting the installation process.
+[186] (style=Body Text, align=JUSTIFY (3)): Configurations Made:
+[187] (style=Body Text, align=JUSTIFY (3)): Attached Ubuntu ISO file to virtual optical drive 
+[188] (style=Body Text, align=JUSTIFY (3)): Enabled virtualization support 
+[189] (style=Body Text, align=JUSTIFY (3)): Configured NAT network adapter 
+[190] (style=Body Text, align=JUSTIFY (3)): Increased video memory for better display 
+[191] (style=Body Text, align=JUSTIFY (3)): Enabled shared clipboard and drag-and-drop options 
+[192] (style=Body Text, align=JUSTIFY (3)): These settings improved system performance and usability.
+[193] (style=Body Text, align=JUSTIFY (3)): 
+[194] (style=Body Text, align=JUSTIFY (3)): 4.5 Installation of Ubuntu 26.04
+[195] (style=Body Text, align=JUSTIFY (3)): After configuring the virtual machine, Ubuntu installation was started using the ISO image file.
+[196] (style=Body Text, align=JUSTIFY (3)): Steps Performed:
+[197] (style=Body Text, align=JUSTIFY (3)): Started the virtual machine. 
+[198] (style=Body Text, align=JUSTIFY (3)): Selected “Install Ubuntu” option. 
+[199] (style=Body Text, align=JUSTIFY (3)): Chose language and keyboard layout. 
+[200] (style=Body Text, align=JUSTIFY (3)): Selected normal installation mode. 
+[201] (style=Body Text, align=JUSTIFY (3)): Configured username and password. 
+[202] (style=Normal, align=JUSTIFY (3)): 
+[203] (style=Normal, align=JUSTIFY (3)):      
+[204] (style=Body Text, align=JUSTIFY (3)): Selected automatic disk partitioning. 
+[205] (style=Body Text, align=JUSTIFY (3)): Began Ubuntu installation process. 
+[206] (style=Body Text, align=JUSTIFY (3)): Restarted the virtual machine after installation completion. 
+[207] (style=Body Text, align=JUSTIFY (3)): After rebooting, Ubuntu 26.04 loaded successfully inside the virtual environment.
+[208] (style=Body Text, align=JUSTIFY (3)): 
+[209] (style=Body Text, align=JUSTIFY (3)): 4.6 Installation of VirtualBox Guest Additions
+[210] (style=Body Text, align=JUSTIFY (3)): Guest Additions were installed to improve integration between the host and guest operating systems.
+[211] (style=Body Text, align=JUSTIFY (3)): Features Enabled:
+[212] (style=Body Text, align=JUSTIFY (3)): Full-screen display support 
+[213] (style=Body Text, align=JUSTIFY (3)): Shared clipboard 
+[214] (style=Body Text, align=JUSTIFY (3)): Better graphics performance 
+[215] (style=Body Text, align=JUSTIFY (3)): Mouse pointer integration 
+[216] (style=Body Text, align=JUSTIFY (3)): Shared folders support 
+[217] (style=Body Text, align=JUSTIFY (3)): Guest Additions improved the overall user experience and system interaction.
+[218] (style=Body Text, align=JUSTIFY (3)): 
+[219] (style=Body Text, align=JUSTIFY (3)): 4.7 Testing and Verification
+[220] (style=Body Text, align=JUSTIFY (3)): After installation, the Ubuntu virtual machine was tested to ensure proper functionality.
+[221] (style=Body Text, align=JUSTIFY (3)): Verification Performed:
+[222] (style=Body Text, align=JUSTIFY (3)): Successful Ubuntu boot process 
+[223] (style=Body Text, align=JUSTIFY (3)): Internet connectivity check 
+[224] (style=Body Text, align=JUSTIFY (3)): File system access verification 
+[225] (style=Body Text, align=JUSTIFY (3)): Terminal command execution 
+[226] (style=Body Text, align=JUSTIFY (3)): Smooth graphical interface operation 
+[227] (style=Body Text, align=JUSTIFY (3)): The system operated successfully without major errors or performance issues.
+[228] (style=Normal, align=JUSTIFY (3)): 
+[229] (style=Normal, align=JUSTIFY (3)): 
+[230] (style=Normal, align=JUSTIFY (3)): 
+[231] (style=Normal, align=JUSTIFY (3)): 
+[232] (style=Normal, align=JUSTIFY (3)): 
+[233] (style=Normal, align=JUSTIFY (3)): 
+[234] (style=Normal, align=JUSTIFY (3)): 
+[235] (style=Normal, align=JUSTIFY (3)): 
+[236] (style=Normal, align=JUSTIFY (3)): 
+[237] (style=Normal, align=JUSTIFY (3)):                                                5. RESULT
+[238] (style=Normal, align=JUSTIFY (3)): The implementation of Ubuntu on Oracle VM VirtualBox was completed successfully. The virtual machine was created, configured, and executed without affecting the host operating system. All required system resources such as RAM, processor, storage, and network connectivity were properly allocated, allowing Ubuntu to run smoothly inside the virtual environment.
+[239] (style=Normal, align=JUSTIFY (3)): After the installation process, the Ubuntu operating system booted successfully and displayed the graphical desktop interface. The system was able to perform all basic operations including file management, internet browsing, software installation, and terminal command execution. The virtual machine also supported important virtualization features such as shared clipboard, full-screen display mode, mouse integration, and shared folders through the installation of VirtualBox Guest Additions.
+[240] (style=Normal, align=JUSTIFY (3)): The network configuration using NAT Adapter worked properly, enabling internet access within the Ubuntu virtual machine. This allowed software updates, package installation, and access to online resources without any connectivity issues. Basic Linux commands were tested through the terminal, and the operating system responded efficiently without major performance problems.
+[241] (style=Normal, align=JUSTIFY (3)): The project also demonstrated the advantages of virtualization technology. Ubuntu was installed and tested safely without modifying or damaging the host operating system. The virtual environment provided flexibility for experimentation, software testing, and learning Linux concepts. Features such as virtual disk management, resource allocation, and system snapshots made the system easy to manage and maintain.
+[242] (style=Normal, align=JUSTIFY (3)): The performance of the virtual machine was stable throughout the implementation process. The allocated RAM and storage space were sufficient for normal Ubuntu operations. The graphical user interface functioned properly, and applications opened successfully with minimal delay. The virtual machine environment proved to be reliable and suitable for educational and development purposes.
+[243] (style=Normal, align=None): 
+[244] (style=Body Text, align=None): 
+[245] (style=Body Text, align=None): 
+[246] (style=Normal, align=JUSTIFY (3)): The project successfully achieved all planned objectives. It provided practical knowledge about virtualization technology, virtual machine creation, Ubuntu installation, and Linux environment configuration. Through this implementation, important concepts related to operating systems, system configuration, and resource management were understood clearly.
+[247] (style=Normal, align=JUSTIFY (3)): Overall, the result of the project confirms that VirtualBox provides an efficient and cost-effective platform for running Ubuntu 26.04 in a virtual environment. The project demonstrates that virtualization technology is a powerful solution for learning, testing, development, and experimentation without requiring additional physical hardware.
+[248] (style=Body Text, align=JUSTIFY (3)): 
+[249] (style=Body Text, align=JUSTIFY (3)): 
+[250] (style=Body Text, align=JUSTIFY (3)): 
+[251] (style=Body Text, align=JUSTIFY (3)): 
+[252] (style=Body Text, align=JUSTIFY (3)): 
+[253] (style=Body Text, align=JUSTIFY (3)): 
+[254] (style=Body Text, align=JUSTIFY (3)): 
+[255] (style=Body Text, align=JUSTIFY (3)): 
+[256] (style=Body Text, align=JUSTIFY (3)): 
+[257] (style=Body Text, align=JUSTIFY (3)): 
+[258] (style=Body Text, align=JUSTIFY (3)): 
+[259] (style=Body Text, align=JUSTIFY (3)): 
+[260] (style=Body Text, align=JUSTIFY (3)): 
+[261] (style=Body Text, align=JUSTIFY (3)): 
+[262] (style=Body Text, align=JUSTIFY (3)): 
+[263] (style=Body Text, align=JUSTIFY (3)): 
+[264] (style=Body Text, align=JUSTIFY (3)): 
+[265] (style=Body Text, align=JUSTIFY (3)): 
+[266] (style=Body Text, align=JUSTIFY (3)): 
+[267] (style=Body Text, align=JUSTIFY (3)): 
+[268] (style=Body Text, align=JUSTIFY (3)): 
+[269] (style=Body Text, align=JUSTIFY (3)): 
+[270] (style=Body Text, align=JUSTIFY (3)): 
+[271] (style=Body Text, align=JUSTIFY (3)): 
+[272] (style=Body Text, align=JUSTIFY (3)): 
+[273] (style=Body Text, align=JUSTIFY (3)): 
+[274] (style=Body Text, align=JUSTIFY (3)): 
+[275] (style=Body Text, align=JUSTIFY (3)): 
+[276] (style=Body Text, align=JUSTIFY (3)): 
+[277] (style=Body Text, align=JUSTIFY (3)): 
+[278] (style=Body Text, align=JUSTIFY (3)): 
+[279] (style=Body Text, align=JUSTIFY (3)): 
+[280] (style=Body Text, align=JUSTIFY (3)): 
+[281] (style=Body Text, align=JUSTIFY (3)): 
+[282] (style=Body Text, align=JUSTIFY (3)): 
+[283] (style=Body Text, align=JUSTIFY (3)): 
+[284] (style=Body Text, align=JUSTIFY (3)): 
+[285] (style=Body Text, align=JUSTIFY (3)): 
+[286] (style=Body Text, align=JUSTIFY (3)): 
+[287] (style=Body Text, align=JUSTIFY (3)): 
+[288] (style=Body Text, align=JUSTIFY (3)): 
+[289] (style=Body Text, align=JUSTIFY (3)): 
+[290] (style=Body Text, align=JUSTIFY (3)): 
+[291] (style=Body Text, align=JUSTIFY (3)): 
+[292] (style=Body Text, align=JUSTIFY (3)): 
+[293] (style=Body Text, align=JUSTIFY (3)): 
+[294] (style=Body Text, align=JUSTIFY (3)): 
+[295] (style=Body Text, align=JUSTIFY (3)): 
+[296] (style=Body Text, align=JUSTIFY (3)): 
+[297] (style=Body Text, align=JUSTIFY (3)): 
+[298] (style=Body Text, align=JUSTIFY (3)): 
+[299] (style=Body Text, align=JUSTIFY (3)): 
+[300] (style=Body Text, align=JUSTIFY (3)): 
+[301] (style=Body Text, align=JUSTIFY (3)): 
+[302] (style=Body Text, align=JUSTIFY (3)): 
+[303] (style=Body Text, align=JUSTIFY (3)): 
+[304] (style=Body Text, align=JUSTIFY (3)): 
+[305] (style=Body Text, align=JUSTIFY (3)): 
+[306] (style=Body Text, align=JUSTIFY (3)): 
+[307] (style=Body Text, align=JUSTIFY (3)): 
+[308] (style=Body Text, align=JUSTIFY (3)): 
+[309] (style=Body Text, align=JUSTIFY (3)): 
+[310] (style=Body Text, align=JUSTIFY (3)): 
+[311] (style=Body Text, align=JUSTIFY (3)): 
+[312] (style=Body Text, align=JUSTIFY (3)): 
+[313] (style=Body Text, align=JUSTIFY (3)): 
+[314] (style=Body Text, align=JUSTIFY (3)): 
+[315] (style=Body Text, align=JUSTIFY (3)): 
+[316] (style=Body Text, align=JUSTIFY (3)): 
+[317] (style=Body Text, align=JUSTIFY (3)): 
+[318] (style=Body Text, align=JUSTIFY (3)): 
+[319] (style=Body Text, align=JUSTIFY (3)): 
+[320] (style=Body Text, align=JUSTIFY (3)): 
+[321] (style=Body Text, align=JUSTIFY (3)): 
+[322] (style=Body Text, align=JUSTIFY (3)): 
+[323] (style=Body Text, align=JUSTIFY (3)): 
+[324] (style=Body Text, align=JUSTIFY (3)): 
+[325] (style=Body Text, align=JUSTIFY (3)): 
+[326] (style=Body Text, align=JUSTIFY (3)): 
+[327] (style=Body Text, align=JUSTIFY (3)): 
+[328] (style=Body Text, align=JUSTIFY (3)): 
+[329] (style=Body Text, align=JUSTIFY (3)): 
+[330] (style=Body Text, align=JUSTIFY (3)): 
+[331] (style=Body Text, align=JUSTIFY (3)): 
+[332] (style=Body Text, align=JUSTIFY (3)): 
+[333] (style=Body Text, align=JUSTIFY (3)): 
+[334] (style=Body Text, align=JUSTIFY (3)): 
+[335] (style=Body Text, align=JUSTIFY (3)): 
+[336] (style=Body Text, align=JUSTIFY (3)): 
+[337] (style=Body Text, align=JUSTIFY (3)): 
+[338] (style=Body Text, align=JUSTIFY (3)): 
+[339] (style=Body Text, align=JUSTIFY (3)): 
+[340] (style=Body Text, align=JUSTIFY (3)): 
+[341] (style=Body Text, align=JUSTIFY (3)): 
+[342] (style=Body Text, align=JUSTIFY (3)): 
+[343] (style=Heading 1, align=LEFT (0)):                                    5. CONCLUSION 
+[344] (style=Normal, align=JUSTIFY (3)): The project on the installation of Ubuntu using Oracle VM VirtualBox was completed successfully. The project provided practical understanding of virtualization technology and demonstrated how multiple operating systems can run on a single physical computer through virtual machines. The implementation process included installing VirtualBox, creating a virtual machine, configuring system resources, and installing Ubuntu 26.04 as the guest operating system.
+[345] (style=Normal, align=JUSTIFY (3)): The project helped in understanding important concepts such as operating system installation, virtual machine management, resource allocation, network configuration, and Linux environment setup. Ubuntu operated successfully inside the virtual machine without affecting the host operating system, proving that virtualization provides a safe and flexible environment for experimentation and learning.
+[346] (style=Normal, align=JUSTIFY (3)): The implementation also showed that VirtualBox is a reliable and user-friendly virtualization platform suitable for students, developers, and researchers. Features such as snapshots, shared folders, clipboard sharing, and Guest Additions improved the usability and performance of the virtual machine. The Ubuntu environment provided access to Linux tools, terminal commands, software packages, and development utilities required for educational and technical purposes.
+[347] (style=Normal, align=JUSTIFY (3)): This project demonstrated the advantages of virtualization technology, including reduced hardware dependency, efficient resource utilization, and easy system management. The virtual environment can be used for software testing, application development, cybersecurity practice, networking experiments, and Linux learning without risking the stability of the host system.
+[348] (style=Body Text, align=JUSTIFY (3)): Overall, the project successfully achieved all objectives and provided valuable hands-on experience in virtualization and Linux operating systems. The successful installation and execution of Ubuntu 26.04 on VirtualBox confirms that virtualization is an effective and cost-efficient solution for modern computing environments 
+[349] (style=Body Text, align=JUSTIFY (3)): 

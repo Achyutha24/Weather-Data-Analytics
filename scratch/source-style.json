@@ -1,0 +1,123 @@
+{
+  "input": "C:\\Users\\achyu\\Downloads\\cc report task 1.docx",
+  "fonts_by_char_count": {},
+  "direct_run_formatting_runs": 138,
+  "direct_paragraph_formatting_paragraphs": 338,
+  "heading_like_paragraphs_not_heading_style": [
+    {
+      "para_index": 6,
+      "text": "WEATHER DATA STORAGE AND ANALYSIS",
+      "style": "Normal"
+    },
+    {
+      "para_index": 16,
+      "text": "2025 - 2026",
+      "style": "Normal"
+    },
+    {
+      "para_index": 28,
+      "text": "TABLE OF CONTENTS",
+      "style": "Normal"
+    },
+    {
+      "para_index": 152,
+      "text": "4.1 Installation of VirtualBox",
+      "style": "Body Text"
+    },
+    {
+      "para_index": 162,
+      "text": "4.2 Downloading Ubuntu ISO File",
+      "style": "Body Text"
+    },
+    {
+      "para_index": 172,
+      "text": "4.3 Creation of Virtual Machine",
+      "style": "Body Text"
+    },
+    {
+      "para_index": 184,
+      "text": "4.4 Configuration of Virtual Machine",
+      "style": "Body Text"
+    },
+    {
+      "para_index": 194,
+      "text": "4.5 Installation of Ubuntu 26.04",
+      "style": "Body Text"
+    },
+    {
+      "para_index": 209,
+      "text": "4.6 Installation of VirtualBox Guest Additions",
+      "style": "Body Text"
+    },
+    {
+      "para_index": 219,
+      "text": "4.7 Testing and Verification",
+      "style": "Body Text"
+    },
+    {
+      "para_index": 237,
+      "text": "                                               5. RESULT",
+      "style": "Normal"
+    }
+  ],
+  "examples": {
+    "direct_paragraph_formatting": [
+      {
+        "para_index": 1,
+        "text": "VISVESVARAYA TECHNOLOGICAL UNIVERSITY",
+        "style": "Heading 1"
+      },
+      {
+        "para_index": 2,
+        "text": "\u201cJnana Sangama\u201d, Belagavi-590018",
+        "style": "Normal"
+      },
+      {
+        "para_index": 3,
+        "text": "",
+        "style": "Body Text"
+      },
+      {
+        "para_index": 4,
+        "text": "Project report",
+        "style": "Heading 2"
+      },
+      {
+        "para_index": 5,
+        "text": "on",
+        "style": "Normal"
+      }
+    ],
+    "direct_run_formatting": [
+      {
+        "para_index": 2,
+        "run_text": "\u201cJnana",
+        "style": "Normal"
+      },
+      {
+        "para_index": 2,
+        "run_text": " ",
+        "style": "Normal"
+      },
+      {
+        "para_index": 2,
+        "run_text": "Sangama\u201d,",
+        "style": "Normal"
+      },
+      {
+        "para_index": 2,
+        "run_text": " ",
+        "style": "Normal"
+      },
+      {
+        "para_index": 2,
+        "run_text": "Belagavi-",
+        "style": "Normal"
+      }
+    ]
+  },
+  "notes": [
+    "Direct formatting is not always wrong, but it often causes inconsistent output when templates change.",
+    "Heading-like paragraphs not using Heading styles can break TOC and accessibility."
+  ]
+}
